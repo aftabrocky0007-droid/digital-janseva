@@ -19,20 +19,16 @@ text-align:center;
 font-weight:600;
 }
 
-/* GOVERNMENT LOGO BAR */
+/* LOGO SECTION */
 .gov-logos{
 background:white;
-padding:15px 5%;
-display:flex;
-justify-content:center;
-align-items:center;
-gap:50px;
-flex-wrap:wrap;
-box-shadow:0 2px 10px rgba(0,0,0,0.08);
+text-align:center;
+padding:15px 10px;
 }
 .gov-logos img{
 height:60px;
-object-fit:contain;
+margin:0 15px;
+vertical-align:middle;
 }
 
 /* HERO */
@@ -49,7 +45,7 @@ overflow:hidden;
 .hero video{
 position:absolute;
 width:100%;
-height:45%;
+height:100%;
 object-fit:cover;
 z-index:-1;
 }
@@ -68,11 +64,11 @@ background:linear-gradient(45deg,orange,green,blue,red);
 color:transparent;
 margin-bottom:20px;
 }
-.hero h1{font-size:48px;margin-bottom:15px;}
-.hero p{font-size:20px;margin:8px 0;}
+.hero h1{font-size:42px;margin-bottom:15px;}
+.hero p{font-size:18px;margin:8px 0;}
 
 .slide-text{
-font-size:22px;
+font-size:20px;
 margin-top:15px;
 animation:slide 6s infinite;
 }
@@ -90,14 +86,14 @@ background:white;
 }
 .services h2{
 text-align:center;
-font-size:42px;
+font-size:38px;
 margin-bottom:40px;
 color:#004aad;
 }
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:30px;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
 }
 .box{
 background:#eef3ff;
@@ -110,10 +106,10 @@ transition:0.3s;
 .box h3{
 color:#004aad;
 margin-bottom:12px;
-font-size:22px;
+font-size:20px;
 }
 .box p{
-font-size:15px;
+font-size:14px;
 line-height:1.6;
 }
 
@@ -124,19 +120,19 @@ color:white;
 padding:60px 20px;
 text-align:center;
 }
-.contact h2{font-size:38px;margin-bottom:15px;}
+.contact h2{font-size:34px;margin-bottom:15px;}
 .contact p{font-size:18px;margin:6px 0;}
 
 /* WHATSAPP */
 .whatsapp{
 position:fixed;
-bottom:30px;
-right:30px;
+bottom:25px;
+right:25px;
 background:#25D366;
 color:white;
-padding:18px 22px;
+padding:16px 20px;
 border-radius:60px;
-font-size:24px;
+font-size:22px;
 text-decoration:none;
 box-shadow:0 5px 15px rgba(0,0,0,0.3);
 }
@@ -158,11 +154,11 @@ font-size:14px;
 भारत सरकार अधिकृत CSC डिजिटल सेवा केंद्र
 </div>
 
-<!-- ✅ NEW GOVERNMENT LOGOS SECTION -->
+<!-- LOGOS -->
 <div class="gov-logos">
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Digital_India_logo.png">
-<img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Common_Service_Centres_logo.png">
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Emblem_of_India.svg">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Emblem_of_India.svg/512px-Emblem_of_India.svg.png">
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Digital_India_logo.svg">
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Common_Service_Centre_logo.png">
 </div>
 
 <section class="hero">
@@ -182,32 +178,31 @@ font-size:14px;
 </div>
 </section>
 
-<!-- SERVICES SECTION SAME AS BEFORE -->
 <section class="services">
 <h2>हमारी प्रमुख सेवाएं</h2>
+
 <div class="grid">
 
-<!-- ALL YOUR 20 SERVICES SAME -->
-<div class="box"><h3>1. आधार कार्ड सेवा</h3><p>नया आधार कार्ड पंजीकरण, मोबाइल नंबर लिंक, पता सुधार, बायोमेट्रिक अपडेट और आधार प्रिंट की सुविधा उपलब्ध।</p></div>
-<div class="box"><h3>2. पैन कार्ड सेवा</h3><p>नया पैन कार्ड आवेदन, पैन सुधार, नाम परिवर्तन और रीप्रिंट सुविधा।</p></div>
-<div class="box"><h3>3. पासपोर्ट सेवा</h3><p>नया पासपोर्ट आवेदन, ऑनलाइन फॉर्म भरना, अपॉइंटमेंट बुकिंग और दस्तावेज़ मार्गदर्शन।</p></div>
-<div class="box"><h3>4. रेलवे टिकट बुकिंग</h3><p>IRCTC ऑनलाइन टिकट बुकिंग, तत्काल टिकट सुविधा।</p></div>
-<div class="box"><h3>5. बिजली बिल भुगतान</h3><p>सभी प्रकार के बिजली बिल का ऑनलाइन भुगतान।</p></div>
-<div class="box"><h3>6. पानी बिल भुगतान</h3><p>जल विभाग बिल भुगतान और रसीद प्रिंट।</p></div>
+<div class="box"><h3>1. आधार कार्ड सेवा</h3><p>नया आधार कार्ड पंजीकरण, मोबाइल नंबर लिंक, पता सुधार, बायोमेट्रिक अपडेट और आधार प्रिंट।</p></div>
+<div class="box"><h3>2. पैन कार्ड सेवा</h3><p>नया पैन कार्ड आवेदन, पैन सुधार, नाम परिवर्तन और रीप्रिंट।</p></div>
+<div class="box"><h3>3. पासपोर्ट सेवा</h3><p>ऑनलाइन आवेदन, अपॉइंटमेंट बुकिंग और दस्तावेज मार्गदर्शन।</p></div>
+<div class="box"><h3>4. रेलवे टिकट</h3><p>IRCTC ऑनलाइन टिकट बुकिंग और तत्काल सुविधा।</p></div>
+<div class="box"><h3>5. बिजली बिल</h3><p>सभी प्रकार के बिजली बिल का ऑनलाइन भुगतान।</p></div>
+<div class="box"><h3>6. पानी बिल</h3><p>जल विभाग बिल भुगतान और रसीद प्रिंट।</p></div>
 <div class="box"><h3>7. जाति प्रमाणपत्र</h3><p>ऑनलाइन आवेदन और डाउनलोड सुविधा।</p></div>
-<div class="box"><h3>8. आय प्रमाणपत्र</h3><p>सरकारी योजनाओं हेतु आय प्रमाणपत्र आवेदन।</p></div>
-<div class="box"><h3>9. निवास प्रमाणपत्र</h3><p>ऑनलाइन पंजीकरण और प्रमाणपत्र प्रिंट।</p></div>
-<div class="box"><h3>10. वृद्धा / विधवा पेंशन</h3><p>सरकारी पेंशन योजना आवेदन और स्टेटस जांच।</p></div>
-<div class="box"><h3>11. प्रधानमंत्री किसान योजना</h3><p>PM किसान सम्मान निधि आवेदन और सुधार।</p></div>
-<div class="box"><h3>12. राशन कार्ड सेवा</h3><p>नया राशन कार्ड आवेदन और सुधार सुविधा।</p></div>
-<div class="box"><h3>13. बैंकिंग सेवा (AEPS)</h3><p>मनी ट्रांसफर, नकद निकासी, बैलेंस चेक सुविधा।</p></div>
-<div class="box"><h3>14. फसल बीमा योजना</h3><p>प्रधानमंत्री फसल बीमा आवेदन।</p></div>
-<div class="box"><h3>15. श्रमिक पंजीकरण</h3><p>लेबर कार्ड और श्रमिक योजना पंजीकरण।</p></div>
-<div class="box"><h3>16. वाहन पंजीकरण सेवा</h3><p>RC डाउनलोड, DL आवेदन और वाहन संबंधित सेवाएं।</p></div>
-<div class="box"><h3>17. ऑनलाइन परीक्षा फॉर्म</h3><p>सरकारी और प्राइवेट नौकरी फॉर्म भरना।</p></div>
-<div class="box"><h3>18. गैस बुकिंग सेवा</h3><p>एलपीजी गैस बुकिंग और सब्सिडी जांच।</p></div>
-<div class="box"><h3>19. मोबाइल रिचार्ज / DTH</h3><p>सभी नेटवर्क रिचार्ज सुविधा।</p></div>
-<div class="box"><h3>20. साइबर कैफे सेवा</h3><p>प्रिंट, स्कैन, फोटो कॉपी, ऑनलाइन फॉर्म भरना।</p></div>
+<div class="box"><h3>8. आय प्रमाणपत्र</h3><p>सरकारी योजनाओं हेतु आवेदन।</p></div>
+<div class="box"><h3>9. निवास प्रमाणपत्र</h3><p>ऑनलाइन पंजीकरण और प्रिंट।</p></div>
+<div class="box"><h3>10. पेंशन योजना</h3><p>वृद्धा / विधवा पेंशन आवेदन।</p></div>
+<div class="box"><h3>11. PM किसान</h3><p>आवेदन और सुधार सुविधा।</p></div>
+<div class="box"><h3>12. राशन कार्ड</h3><p>नया आवेदन और सुधार।</p></div>
+<div class="box"><h3>13. बैंकिंग (AEPS)</h3><p>मनी ट्रांसफर, नकद निकासी, बैलेंस चेक।</p></div>
+<div class="box"><h3>14. फसल बीमा</h3><p>प्रधानमंत्री फसल बीमा आवेदन।</p></div>
+<div class="box"><h3>15. श्रमिक पंजीकरण</h3><p>लेबर कार्ड और योजना पंजीकरण।</p></div>
+<div class="box"><h3>16. वाहन सेवा</h3><p>RC डाउनलोड, DL आवेदन।</p></div>
+<div class="box"><h3>17. परीक्षा फॉर्म</h3><p>सरकारी / प्राइवेट नौकरी फॉर्म।</p></div>
+<div class="box"><h3>18. गैस बुकिंग</h3><p>एलपीजी बुकिंग और सब्सिडी जांच।</p></div>
+<div class="box"><h3>19. मोबाइल रिचार्ज</h3><p>सभी नेटवर्क रिचार्ज सुविधा।</p></div>
+<div class="box"><h3>20. साइबर कैफे</h3><p>प्रिंट, स्कैन, फोटो कॉपी, ऑनलाइन फॉर्म।</p></div>
 
 </div>
 </section>
