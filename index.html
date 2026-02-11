@@ -1,41 +1,289 @@
 <!DOCTYPE html>
-<html>
+<html lang="hi">
 <head>
-<title>Digital Janseva Evam Cyber Kendra</title>
-<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>डिजिटल जनसेवा एवं साइबर केंद्र</title>
+
+<style>
+
+body{
+margin:0;
+font-family:'Segoe UI', sans-serif;
+background:#f4f6f9;
+scroll-behavior:smooth;
+}
+
+/* TOP SLIDING BAR */
+.topbar{
+background:#ffcc00;
+color:#000;
+padding:12px;
+font-size:22px;
+font-weight:bold;
+overflow:hidden;
+white-space:nowrap;
+}
+
+.topbar span{
+display:inline-block;
+padding-left:100%;
+animation:slide 18s linear infinite;
+}
+
+@keyframes slide{
+0%{transform:translateX(0);}
+100%{transform:translateX(-100%);}
+}
+
+/* HEADER */
+header{
+background:linear-gradient(to right,#002147,#0059b3);
+color:white;
+text-align:center;
+padding:60px 20px;
+}
+
+.logo{
+font-size:45px;
+font-weight:bold;
+background:white;
+color:#002147;
+display:inline-block;
+padding:12px 30px;
+border-radius:50px;
+margin-bottom:20px;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+header h1{
+font-size:50px;
+margin:10px 0;
+}
+
+header p{
+font-size:24px;
+}
+
+/* HERO VIDEO */
+.hero{
+position:relative;
+height:95vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+overflow:hidden;
+}
+
+.bg-video{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+object-fit:cover;
+z-index:-1;
+}
+
+.hero-content{
+background:rgba(0,0,0,0.6);
+padding:50px 70px;
+border-radius:20px;
+animation:fadeIn 3s ease-in-out;
+}
+
+.hero-content h2{
+font-size:55px;
+margin:0;
+}
+
+.hero-content p{
+font-size:28px;
+margin-top:20px;
+}
+
+/* SECTIONS */
+section{
+padding:90px 20px;
+text-align:center;
+}
+
+h2{
+font-size:45px;
+margin-bottom:60px;
+color:#002147;
+}
+
+.card{
+background:white;
+padding:45px;
+margin:35px auto;
+max-width:1200px;
+border-radius:18px;
+box-shadow:0 15px 35px rgba(0,0,0,0.2);
+font-size:24px;
+line-height:1.8;
+text-align:left;
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.03);
+}
+
+/* CONTACT */
+.contact{
+background:#e6f0ff;
+}
+
+/* FOOTER */
+footer{
+background:#000;
+color:white;
+padding:35px;
+text-align:center;
+font-size:22px;
+}
+
+/* WHATSAPP */
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+}
+
+/* ANIMATION */
+@keyframes fadeIn{
+from{opacity:0;transform:translateY(30px);}
+to{opacity:1;transform:translateY(0);}
+}
+
+</style>
 </head>
 <body>
 
-<div class="header">
-<h1>Digital Janseva Evam Cyber Kendra</h1>
-<p>Manpur Mod, Sujaganj, Ayodhya, Uttar Pradesh</p>
+<div class="topbar">
+<span>✔ सभी सरकारी एवं ऑनलाइन सेवाएं उपलब्ध | ✔ तेज और सुरक्षित सेवा | ✔ उचित शुल्क | ✔ WhatsApp: +91 6393017868</span>
 </div>
 
-<div class="navbar">
-<a href="index.html">Home</a>
-<a href="services.html">Services</a>
-<a href="contact.html">Contact</a>
+<header>
+<div class="logo">CSC</div>
+<h1>डिजिटल जनसेवा एवं साइबर केंद्र</h1>
+<p>मनपुर मोड़, सुजागंज, जिला अयोध्या, उत्तर प्रदेश</p>
+<p>📞 मोबाइल: +91 6393017868 (WhatsApp उपलब्ध)</p>
+</header>
+
+<div class="hero">
+<video autoplay muted loop playsinline class="bg-video">
+<source src="https://cdn.coverr.co/videos/coverr-working-on-laptop-5173/1080p.mp4" type="video/mp4">
+</video>
+
+<div class="hero-content">
+<h2>गांव की सभी ऑनलाइन सेवाएं एक ही स्थान पर</h2>
+<p>तेज | सुरक्षित | भरोसेमंद डिजिटल सेवा केंद्र</p>
+</div>
 </div>
 
-<section class="hero">
-<h2>All Village Online Government Services</h2>
-<p>Fast • Secure • Affordable • Trusted Service Center</p>
-<a href="services.html" class="btn">Explore Services</a>
+<section>
+<h2>हमारी प्रमुख सेवाएं</h2>
+
+<div class="card">
+<b>आधार कार्ड सेवाएं:</b><br>
+नया पंजीकरण, नाम/पता सुधार, मोबाइल अपडेट, बायोमेट्रिक अपडेट, PVC प्रिंट।
+</div>
+
+<div class="card">
+<b>पैन कार्ड सेवाएं:</b><br>
+नया पैन आवेदन, सुधार, खोया पैन पुनः प्रिंट, ई-पैन डाउनलोड।
+</div>
+
+<div class="card">
+<b>पासपोर्ट आवेदन:</b><br>
+नया आवेदन, रिन्यूअल, ऑनलाइन अपॉइंटमेंट बुकिंग।
+</div>
+
+<div class="card">
+<b>रेलवे टिकट बुकिंग:</b><br>
+साधारण टिकट, तत्काल टिकट, PNR चेक।
+</div>
+
+<div class="card">
+<b>बिजली / पानी / गैस बिल भुगतान</b>
+</div>
+
+<div class="card">
+<b>मोबाइल एवं DTH रिचार्ज</b>
+</div>
+
+<div class="card">
+<b>सरकारी योजनाएं:</b>
+प्रधानमंत्री किसान, आयुष्मान कार्ड, ई-श्रम, पेंशन।
+</div>
+
+<div class="card">
+<b>आय / जाति / निवास प्रमाण पत्र</b>
+</div>
+
+<div class="card">
+<b>वोटर आईडी सेवाएं</b>
+</div>
+
+<div class="card">
+<b>बैंकिंग सेवाएं (AEPS)</b>
+</div>
+
+<div class="card">
+<b>मनी ट्रांसफर</b>
+</div>
+
+<div class="card">
+<b>ऑनलाइन फॉर्म भरना</b>
+</div>
+
+<div class="card">
+<b>राशन कार्ड सेवाएं</b>
+</div>
+
+<div class="card">
+<b>किसान पंजीकरण</b>
+</div>
+
+<div class="card">
+<b>फोटो कॉपी एवं प्रिंट</b>
+</div>
+
+<div class="card">
+<b>स्कैनिंग एवं लैमिनेशन</b>
+</div>
+
+<div class="card">
+<b>बस एवं फ्लाइट टिकट</b>
+</div>
+
 </section>
 
-<section class="gallery">
-<h2>Our Digital Center</h2>
-<img src="https://images.unsplash.com/photo-1581091870627-3e7d3c1e3f15">
-<img src="https://images.unsplash.com/photo-1581093588401-22d6b7c8c4b2">
-<img src="https://images.unsplash.com/photo-1581092918484-8313c3d0f5b6">
+<section class="contact">
+<h2>संपर्क करें</h2>
+
+<div class="card">
+📍 पता: मनपुर मोड़, सुजागंज, जिला अयोध्या, उत्तर प्रदेश<br><br>
+📞 मोबाइल: +91 6393017868<br><br>
+
+<h3>हमारा स्थान</h3>
+<iframe 
+src="https://www.google.com/maps?q=Manpur%20Mod%20Sujaganj%20Ayodhya&output=embed"
+width="100%" height="400" style="border:0;"></iframe>
+</div>
 </section>
 
-<div class="footer">
-📞 +91 6393017868 | WhatsApp Available
-</div>
+<footer>
+© 2026 डिजिटल जनसेवा एवं साइबर केंद्र | सभी अधिकार सुरक्षित
+</footer>
 
 <a href="https://wa.me/916393017868" class="whatsapp">
-<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" width="60">
+<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" width="75">
 </a>
 
 </body>
