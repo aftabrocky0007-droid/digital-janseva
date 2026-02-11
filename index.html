@@ -7,49 +7,7 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
 
-<style.image-slider{
-padding:60px 8%;
-background:#f4f7ff;
-}
-
-.slider{
-position:relative;
-max-width:1000px;
-margin:auto;
-overflow:hidden;
-border-radius:15px;
-box-shadow:0 10px 25px rgba(0,0,0,0.2);
-}
-
-.slide{
-display:none;
-}
-
-.slide img{
-width:100%;
-height:450px;
-object-fit:cover;
-}
-
-.active{
-display:block;
-}
-
-.prev,.next{
-position:absolute;
-top:50%;
-transform:translateY(-50%);
-background:rgba(0,0,0,0.5);
-color:white;
-border:none;
-padding:10px 15px;
-cursor:pointer;
-font-size:22px;
-border-radius:50%;
-}
-
-.prev{left:15px;}
-.next{right:15px;}>
+<style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;scroll-behavior:smooth;}
 body{background:#f5f7fa;color:#222;}
 
@@ -64,7 +22,7 @@ font-weight:600;
 /* HERO */
 .hero{
 position:relative;
-height:40vh;
+height:45vh;
 display:flex;
 align-items:center;
 justify-content:center;
@@ -75,7 +33,7 @@ overflow:hidden;
 .hero video{
 position:absolute;
 width:100%;
-height:40%;
+height:45%;
 object-fit:cover;
 z-index:-1;
 }
@@ -258,30 +216,6 @@ font-size:14px;
 <footer>
 © 2026 डिजिटल जनसेवा एवं साइबर केंद्र | सभी अधिकार सुरक्षित
 </footer>
-<script>
-let slideIndex = 0;
-const slides = document.querySelectorAll(".slide");
 
-function showSlide(n){
-slides.forEach(s => s.classList.remove("active"));
-slides[n].classList.add("active");
-}
-
-function nextSlide(){
-slideIndex = (slideIndex + 1) % slides.length;
-showSlide(slideIndex);
-}
-
-function prevSlide(){
-slideIndex = (slideIndex - 1 + slides.length) % slides.length;
-showSlide(slideIndex);
-}
-
-document.querySelector(".next").addEventListener("click", nextSlide);
-document.querySelector(".prev").addEventListener("click", prevSlide);
-
-setInterval(nextSlide, 4000);
-showSlide(slideIndex);
-</script>
 </body>
 </html>
